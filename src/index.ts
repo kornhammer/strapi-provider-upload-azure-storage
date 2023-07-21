@@ -121,6 +121,10 @@ module.exports = {
             label: 'CDN base url (optional)',
             type: 'text',
         },
+        sasToken: {
+            label: 'SAS Token, either accountKey or SASToken is required',
+            type: 'text',
+        },
     },
     init: (config: Config) => {
         const blobSvcClient = makeBlobServiceClient(config);
